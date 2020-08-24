@@ -1,0 +1,22 @@
+<!--pages/text/text.wxml-->
+<!-- text组件基本使用，相当于span标签 -->
+<text>Hello world\n</text>
+
+<!-- 属性 -->
+<!-- 1.selectable 手机长按是否可选中 -->
+<text>Hello world\n</text>
+<text selectable>Hello world\n</text>
+
+<!-- 2.space 空格大小 -->
+<!-- nbsp 根据字体设置的空格大小	 -->
+<!-- emsp 中文字符空格大小 -->
+<!-- ensp 中文字符空格一半大小	 -->
+<text>Hello world\n</text>
+<text space='nbsp'>Hello world\n</text>
+<text space='emsp'>Hello world\n</text>
+<text space='ensp'>Hello world\n</text>
+
+<!-- 3.decode 特殊字符解码 -->
+<text>5 &gt; 2\n</text>
+<text decode>5 &gt; 2\n</text>
+

@@ -1,0 +1,29 @@
+<!--pages/input/input.wxml-->
+<!-- input组件基本使用 -->
+<input/>
+
+<!-- 1.value iNPUT默认值 -->
+<input value="哈哈哈"/>
+
+<!-- 2.type 键盘输入类型（数字） -->
+<input type="number"/>
+
+<!-- 3.password 暗文 -->
+<input password/>
+
+<!-- 4.placeholder 占位文字 -->
+<input placeholder="请输入"/>
+
+<!-- 5.input绑定事件 输入时触发-->
+<input bindinput="handleInput"/>
+
+<!-- 6.聚焦时触发 -->
+<input bindfocus="handleFocus"/>
+
+<!-- 7.失去焦点触发 -->
+<input bindblur="handleBlur"/>
+
+
+
+
+

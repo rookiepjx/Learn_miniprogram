@@ -1,0 +1,25 @@
+<!--pages/image/image.wxml-->
+<!-- image组件基本使用 -->
+<!-- 1.image组件有默认大小，320 x 240 -->
+<!-- 2.image组件是行内块元素 -->
+<image src="https://res.wx.qq.com/wxdoc/dist/assets/img/0.4cb08bb4.jpg"  />
+
+<!-- 用户选择图片/拍照 -->
+<button bindtap="chooseImage">选择图片</button>
+<image src="{{imagePath}}"/>
+
+<view>---------------------------------------</view>
+<!-- bindLoad监听图片加载完成,lazy-load懒加载 -->
+<image wx:for="{{3}}" 
+src="https://res.wx.qq.com/wxdoc/dist/assets/img/0.4cb08bb4.jpg"
+bindload="imageLoad"
+lazy-load />
+
+<!-- 长按图片识别小程序码 -->
+<image src="https://res.wx.qq.com/wxdoc/dist/assets/img/0.4cb08bb4.jpg" show-menu-by-longpress />
+
+<!-- 图片剪裁模式 -->
+<view>-----------</view>
+<image src="https://res.wx.qq.com/wxdoc/dist/assets/img/0.4cb08bb4.jpg" mode="top" />
+
+

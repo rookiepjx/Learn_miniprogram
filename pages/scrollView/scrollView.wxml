@@ -1,0 +1,11 @@
+<!--pages/scrollView/scrollView.wxml-->
+<scroll-view class="scroll-x" scroll-x>
+<text>水平滚动</text>
+<view wx:for="{{10}}" class="item-x">{{item}}</view>
+</scroll-view>
+
+<!--bindscroll绑定滚动事件  -->
+<scroll-view class="scroll-y" scroll-y bindscroll="handleScroll">
+<text>垂直滚动</text>
+<view wx:for="{{10}}" class="item-y">{{item}}</view>
+</scroll-view>

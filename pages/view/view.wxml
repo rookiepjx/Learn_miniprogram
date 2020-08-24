@@ -1,0 +1,18 @@
+<!--pages/view/view.wxml-->
+<!-- 1.view组件基本使用 -->
+<view class="view">view</view>
+<!-- 2.hover-class 点击样式 -->
+<view hover-class="hover">view</view>
+<!-- 3.hover-start-time 进入点击态的延时-->
+<view hover-class="hover" hover-start-time="{{1000}}">view</view>
+<!-- 4.hover-stay-time 点击态持续时间 -->
+<view hover-class="hover" hover-stay-time="{{1000}}">view</view>
+<!-- 5.hover-stop-propagation阻止事件冒泡 -->
+<!-- 只会触发子元素的点击态 -->
+<view class="father" hover-class="father-hover">
+<view class="son" hover-class="son-hover"   hover-stop-propagation>
+son
+</view>
+</view>
+
+
